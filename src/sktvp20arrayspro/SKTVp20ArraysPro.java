@@ -57,6 +57,25 @@ public class SKTVp20ArraysPro {
         }
         System.out.println();   
     } 
- }
-    
+    System.out.println("Зубчатый массив в Java");
+    double[][] zubArray = new double[5][];
+        zubArray[0] = new double[2];
+        zubArray[1] = new double[3];
+        zubArray[2] = new double[4];
+        zubArray[3] = new double[5];
+        zubArray[4] = new double[6];
+        for(int i = 0; i < zubArray.length;i++){
+            for(int j = 0; j < zubArray[i].length; j++){
+                zubArray[i][j]= random.nextDouble()*10;
+            }
+        }
+        System.out.println("zubArray = ");
+        for(int i = 0; i < zubArray.length;i++){
+            for(int j = 0; j < zubArray[i].length; j++){
+                System.out.printf("%-7.2f",zubArray[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
 }
