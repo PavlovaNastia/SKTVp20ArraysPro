@@ -53,8 +53,10 @@ public class SKTVp20ArraysPro {
     //System.out.println(Arrays.toString(nums3));
     for(int i=0; i < nums3.length;i++){
         for(int j=0;  j <nums3[1].length;j++){   
-            System.out.printf("%5d", nums3[i][j]);
+            System.out.printf("%3d", nums3[i][j]);
         }
         System.out.println();   
     } 
  }
+    
+}
